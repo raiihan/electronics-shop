@@ -3,6 +3,7 @@
     height: 480px;
     border: 1px solid grey;
     border-radius: 5px;
+    position: relative;
 }
 
 .cart img{
@@ -11,7 +12,7 @@
     margin: 16px;
     padding: 8px;
     border-radius: 15px;
-    background-color: darkgrey;
+    background-color: gainsboro;
 }
 .product-info{
     padding: 0 16px;
@@ -27,5 +28,12 @@
 
 .btn-cart{
     width: 100%;
-    background-color: bisque;
+    background-color: greenyellow;
+    border: none;
+    border-radius: 0px 0px 5px 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0;
 }
