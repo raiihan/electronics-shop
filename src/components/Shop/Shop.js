@@ -19,6 +19,10 @@ const Shop = () => {
             setCart(newCart)
         }
     }
+
+    const handleChooseBtn = () => {
+        setCart([])
+    }
     return (
         <div className='shop-container'>
             <div className="product-conatainer">
@@ -31,13 +35,17 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <h3 className='title'>Your Selected Products</h3>
+                <h3 className='cart-title'>Your Selected Products</h3>
                 {
                     cart.map(singleCart => <Cart
                         key={singleCart.id}
                         cart={singleCart}
                     />)
                 }
+                <div className="btn">
+                    <button id='choose-for-me' className='choose-btn'>CHOSSE 1 FOR ME</button>
+                    <button onClick={handleChooseBtn} className="choose-btn">CHOSSE AGAIN</button>
+                </div>
             </div>
         </div>
     );

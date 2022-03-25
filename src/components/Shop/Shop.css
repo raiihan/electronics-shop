@@ -14,3 +14,26 @@
     background-color: greenyellow;
     border-radius: 16px;
 }
+
+.cart-title{
+    text-align: center;
+}
+
+.choose-btn{
+    display: block;
+    background-color: transparent;
+    color: crimson;
+    padding: 7px 5px;
+    margin: 8px 10px;
+    cursor: pointer;
+
+}
+.choose-btn:hover{
+    background-color: lawngreen;
+    border: none;
+    font-weight: 900;
+}
+
+#choose-for-me{
+    color: green;
+}
