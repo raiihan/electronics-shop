@@ -1,6 +1,15 @@
 .App {
   text-align: center;
 }
+.App h1{
+  color: yellowgreen;
+}
+.App h5{
+  color: gray;
+  font-weight: bolder;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-style: italic;
+}
 
 .App-logo {
   height: 40vmin;

@@ -37,3 +37,10 @@
     position: absolute;
     bottom: 0;
 }
+
+.btn-cart:hover{
+    background-color: lawngreen;
+    color: whitesmoke;
+    font-weight: 900;
+    font-size: 16px;
+}
