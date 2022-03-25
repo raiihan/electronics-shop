@@ -13,6 +13,7 @@
 .cart-container{
     background-color: greenyellow;
     border-radius: 16px;
+    position: sticky;
 }
 
 .cart-title{
@@ -36,4 +37,10 @@
 
 #choose-for-me{
     color: green;
+}
+
+@media screen and (max-width: 576px){
+    .product-conatainer{
+        grid-template-columns: repeat(1, 1fr);
+         }
 }
