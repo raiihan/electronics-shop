@@ -1,0 +1,17 @@
+.cart{
+    display: flex;
+    align-items: center;
+    margin: 0 15px;
+    margin-bottom: 10px;
+    background-color: gray;
+    padding: 10px;
+}
+.cart img{
+    width: 60px;
+    height: 60px;
+    margin-right: 10px;
+    border-radius: 25%;
+}
+.cart h4{
+    color: whitesmoke;
+}

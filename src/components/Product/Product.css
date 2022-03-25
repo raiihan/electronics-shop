@@ -1,4 +1,4 @@
-.cart{
+.product{
     width: 350px;
     height: 480px;
     border: 1px solid grey;
@@ -6,7 +6,7 @@
     position: relative;
 }
 
-.cart img{
+.product img{
     width: 300px;
     height: 300px;
     margin: 16px;

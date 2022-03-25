@@ -5,7 +5,7 @@ import './Product.css'
 const Product = ({ product, handleAddCart }) => {
     const { id, name, img, price } = product;
     return (
-        <div className='cart'>
+        <div className='product'>
             <img src={img} alt="Product" />
             <div className="product-info">
                 <h2 className='product-name'>{name}</h2>
