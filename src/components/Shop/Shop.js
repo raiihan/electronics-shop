@@ -6,7 +6,9 @@ import './Shop.css'
 const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
-    console.log(cart)
+    const [raffled, setRaffld] = useState([]);
+    console.log(raffled);
+    // console.log(cart)
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -14,14 +16,32 @@ const Shop = () => {
     }, [])
 
     const handleAddCart = addedProduct => {
-        if (addedProduct) {
-            const newCart = [...cart, addedProduct]
-            setCart(newCart)
+        if (cart.length < 4) {
+            if (addedProduct) {
+                const newCart = [...cart, addedProduct]
+                setCart(newCart)
+            }
+        }
+        else {
+            alert('You can not add more than 4 items');
+            return;
         }
     }
 
     const handleChooseBtn = () => {
+        const raffledItem = [...cart];
+        if (raffledItem.length === 0) {
+            alert('Your cart is empty please add to cart a product');
+            return;
+        } else {
+            const index = Math.floor(Math.random() * raffledItem.length)
+            setRaffld(raffledItem[index])
+        }
+    }
+
+    const handleRemoveBtn = () => {
         setCart([])
+        setRaffld([])
     }
     return (
         <div className='shop-container'>
@@ -42,9 +62,12 @@ const Shop = () => {
                         cart={singleCart}
                     />)
                 }
+                <div>
+                    {raffled.name ? 'You Can Buy this item ' + raffled.name : ''}
+                </div>
                 <div className="btn">
-                    <button id='choose-for-me' className='choose-btn'>CHOSSE 1 FOR ME</button>
-                    <button onClick={handleChooseBtn} className="choose-btn">CHOSSE AGAIN</button>
+                    <button onClick={handleChooseBtn} id='choose-for-me' className='choose-btn'>CHOSSE 1 FOR ME</button>
+                    <button onClick={handleRemoveBtn} className="choose-btn">CHOSSE AGAIN</button>
                 </div>
             </div>
         </div>
