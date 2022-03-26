@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import Cart from '../Cart/Cart';
+import Modals from '../Modal/Modal';
 import Product from '../Product/Product';
 import './Shop.css'
 
@@ -17,26 +18,31 @@ const Shop = () => {
 
     const handleAddCart = addedProduct => {
         if (cart.length < 4) {
-            if (addedProduct) {
+            const exist = cart.find(cartItem => cartItem.id === addedProduct.id);
+            if (!exist) {
                 const newCart = [...cart, addedProduct]
                 setCart(newCart)
             }
+            else (
+                alert('You already added this item')
+            )
         }
         else {
-            alert('You can not add more than 4 items');
+            alert('You can not add more than 4 items')
             return;
         }
     }
 
-    const handleChooseBtn = () => {
+    const handleChooseBtn = (openModal) => {
         const raffledItem = [...cart];
         if (raffledItem.length === 0) {
-            alert('Your cart is empty please add to cart a product');
+            alert('Your cart is empty please add to cart a product')
             return;
         } else {
             const index = Math.floor(Math.random() * raffledItem.length)
             setRaffld(raffledItem[index])
         }
+        openModal()
     }
 
     const handleRemoveBtn = () => {
@@ -62,13 +68,14 @@ const Shop = () => {
                         cart={singleCart}
                     />)
                 }
-                <div>
-                    {raffled.name ? 'You Can Buy this item ' + raffled.name : ''}
-                </div>
+
                 <div className="btn">
-                    <button onClick={handleChooseBtn} id='choose-for-me' className='choose-btn'>CHOSSE 1 FOR ME</button>
+                    <Modals
+                        handleChooseBtn={handleChooseBtn}
+                        raffleDraw={raffled} />
                     <button onClick={handleRemoveBtn} className="choose-btn">CHOSSE AGAIN</button>
                 </div>
+
             </div>
         </div>
     );
