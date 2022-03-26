@@ -50,6 +50,13 @@ const Shop = () => {
         setRaffld([])
         setDisabled(false)
     }
+
+    const handleDeleteCart = addedCart => {
+        if (addedCart) {
+            const restCart = cart.filter(singleCart => singleCart.id !== addedCart.id)
+            setCart(restCart)
+        }
+    }
     return (
         <div className='shop-container'>
             <div className="product-conatainer">
@@ -67,6 +74,7 @@ const Shop = () => {
                     cart.map(singleCart => <Cart
                         key={singleCart.id}
                         cart={singleCart}
+                        handleDeleteCart={handleDeleteCart}
                     />)
                 }
 

@@ -13,7 +13,6 @@
 .cart-container{
     background-color: greenyellow;
     border-radius: 16px;
-    position: sticky;
 }
 
 .cart-title{
@@ -51,7 +50,8 @@
     .product-conatainer{
         grid-template-columns: repeat(1, 1fr);
         order: 2;
-        margin-top: 50px;
+        margin: 50px auto;
+        padding-left: 0;
     }
 
     .choose-btn{

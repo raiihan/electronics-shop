@@ -2,14 +2,12 @@ import './App.css';
 import Shop from './components/Shop/Shop';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Fqa from './components/FQA/Fqa';
+import Header from './components/Header/Header';
 
 function App() {
   return (
     <div>
-      <div className="App">
-        <h1>Silvaan Internation Electronics</h1>
-        <h5>Our Product Your Passion</h5>
-      </div>
+      <Header />
       <Shop />
       <Fqa />
     </div>
