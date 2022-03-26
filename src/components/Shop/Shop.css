@@ -40,7 +40,16 @@
 }
 
 @media screen and (max-width: 576px){
+    .shop-container{
+        grid-template-columns: 1fr;
+    }
     .product-conatainer{
         grid-template-columns: repeat(1, 1fr);
-         }
+        order: 2;
+        margin-top: 50px;
+    }
+
+    .choose-btn{
+        display: inline-block;
+    }
 }
