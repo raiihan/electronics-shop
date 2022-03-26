@@ -1,74 +1,74 @@
 [
     {
         "id": "623dd93848fc65a0bbe14d16",
-        "name": "Chasity Rhodes",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "Chasity Rhodes display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-8.jpg",
         "price": 17865
     },
     {
         "id": "623dd9382d94723174a74502",
-        "name": "Dorothy Bright",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "Dorothy Bright display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-7.jpg",
         "price": 48810
     },
     {
         "id": "623dd938982085b6dcc4c2ec",
-        "name": "Dalton Rosa",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "Dalton Rosa display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-4.jpg",
         "price": 20353
     },
     {
         "id": "623dd938ddae5b84eb80befe",
-        "name": "York Hayes",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "York Hayes display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-2.jpg",
         "price": 13893
     },
     {
         "id": "623dd9388fc73431538345c3",
-        "name": "Barr Avila",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "Barr Avila display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-3.jpg",
         "price": 26882
     },
     {
         "id": "623dd938e8712b60644a8721",
-        "name": "Marsh Smith",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "Marsh Smith display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-5.jpg",
         "price": 15512
     },
     {
         "id": "623dd9380f2c40718888727b",
-        "name": "Eula Rodriguez",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "Eula Rodriguez display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-6.jpg",
         "price": 17845
     },
     {
         "id": "623dd93848cef200fb05bc41",
-        "name": "Oconnor Blanchard",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "Oconnor Blanchard Display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-9.jpg",
         "price": 49127
     },
     {
         "id": "623dd938def313534302aa98",
-        "name": "Cherie Taylor",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "Cherie Taylor display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-12.jpg",
         "price": 16154
     },
     {
         "id": "623dd9382f145cf01e9b62f8",
-        "name": "Rena Larsen",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "Rena Larsen display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-11.jpg",
         "price": 14008
     },
     {
         "id": "623dd93899bb28738b7a1d8e",
-        "name": "Nadia Mann",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "Nadia Mann Display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-10.jpg",
         "price": 36175
     },
     {
         "id": "623dd9382bebf87decd9927c",
-        "name": "Ware Chaney",
-        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/f6b614a78b63805e4b47de98f708c3881077520c/electornics/Samsung%20549639-62-1.jpg",
+        "name": "Ware Chaney Display",
+        "img": "https://raw.githubusercontent.com/silvaan/mission_2022/api-images/electornics/p-1.jpg",
         "price": 24545
     }
 ]
