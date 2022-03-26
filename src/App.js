@@ -1,5 +1,7 @@
 import './App.css';
 import Shop from './components/Shop/Shop';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Fqa from './components/FQA/Fqa';
 
 function App() {
   return (
@@ -9,6 +11,7 @@ function App() {
         <h5>Our Product Your Passion</h5>
       </div>
       <Shop />
+      <Fqa />
     </div>
   );
 }
