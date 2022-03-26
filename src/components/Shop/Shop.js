@@ -8,8 +8,7 @@ const Shop = () => {
     const [products, setProducts] = useState([]);
     const [cart, setCart] = useState([]);
     const [raffled, setRaffld] = useState([]);
-    console.log(raffled);
-    // console.log(cart)
+    const [isDisabled, setDisabled] = useState(false)
     useEffect(() => {
         fetch('data.json')
             .then(res => res.json())
@@ -36,18 +35,20 @@ const Shop = () => {
     const handleChooseBtn = (openModal) => {
         const raffledItem = [...cart];
         if (raffledItem.length === 0) {
-            alert('Your cart is empty please add to cart a product')
+            alert('Your cart is empty please add to Product in cart')
             return;
         } else {
             const index = Math.floor(Math.random() * raffledItem.length)
             setRaffld(raffledItem[index])
         }
+        setDisabled(true)
         openModal()
     }
 
     const handleRemoveBtn = () => {
         setCart([])
         setRaffld([])
+        setDisabled(false)
     }
     return (
         <div className='shop-container'>
@@ -72,7 +73,9 @@ const Shop = () => {
                 <div className="btn">
                     <Modals
                         handleChooseBtn={handleChooseBtn}
-                        raffleDraw={raffled} />
+                        raffleDraw={raffled}
+                        isDisabled={isDisabled} />
+
                     <button onClick={handleRemoveBtn} className="choose-btn">CHOSSE AGAIN</button>
                 </div>
 

@@ -38,6 +38,11 @@
 #choose-for-me{
     color: green;
 }
+#choose-for-me:disabled{
+    background-color: #ffffff;
+    cursor: not-allowed;
+    color: #c0c0c0;
+}
 
 @media screen and (max-width: 576px){
     .shop-container{

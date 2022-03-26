@@ -12,7 +12,7 @@ const customStyles = {
     },
 };
 Modal.setAppElement('#root');
-const Modals = ({ handleChooseBtn, err, raffleDraw }) => {
+const Modals = ({ handleChooseBtn, isDisabled, raffleDraw }) => {
     let subtitle;
     const [modalIsOpen, setIsOpen] = React.useState(false);
 
@@ -30,7 +30,7 @@ const Modals = ({ handleChooseBtn, err, raffleDraw }) => {
     }
     return (
         <div>
-            <button onClick={() => handleChooseBtn(openModal)} id='choose-for-me' className='choose-btn'>CHOSSE 1 FOR ME</button>
+            <button onClick={() => handleChooseBtn(openModal)} disabled={isDisabled} id='choose-for-me' className='choose-btn'>CHOSSE 1 FOR ME</button>
             <Modal
                 isOpen={modalIsOpen}
                 onAfterOpen={afterOpenModal}
